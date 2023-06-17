@@ -111,9 +111,17 @@ body {
 }
 
 .header-menu-link {
-  position: relative;
+  /*  */
   color: var(--hov-foc);
   padding: 24px 0;
+  /* transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.active {
+  position: relative;
+  color: var(--hov-foc);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -137,7 +145,7 @@ body {
   background: var(--hov-foc);
 }
 
-/* .active::after {
+.active::after {
   content: "";
   display: block;
   position: absolute;
@@ -147,7 +155,7 @@ body {
   border-radius: 2px;
   height: 4px;
   background: var(--hov-foc);
-} */
+}
 
 .header-address {
   font-style: normal;
